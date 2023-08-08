@@ -285,7 +285,7 @@ end;
 # ╔═╡ 87e69d81-08f5-46d9-847f-9035a3f47353
 begin
 	scatter(post_n, post_theta6, title = "Posterior Samples",
-		xlabel = "Number of Survey", ylabel = "Rate of Return",
+		xlabel = "Number of Surveys", ylabel = "Rate of Return",
 		markersize = 3, legend = false)
 end
 
