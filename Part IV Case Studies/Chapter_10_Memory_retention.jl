@@ -185,8 +185,10 @@ begin
 	post_alphas = Vector{Float64}(undef, 4000);
 	post_betas = Vector{Float64}(undef, 4000);
 	for i in 1:4000
-		post_alphas[i] = rand(truncated(Normal(post_alphamu[i], post_alphalambda[i])))
-		post_betas[i] = rand(truncated(Normal(post_betamu[i], post_betalambda[i])))
+		post_alphas[i] = rand(truncated(
+			Normal(post_alphamu[i], post_alphalambda[i]), 0, 1))
+		post_betas[i] = rand(truncated(
+			Normal(post_betamu[i], post_betalambda[i]), 0, 1))
 		for j in 1:10
 			post_ks[i, j] = rand(Binomial(18, exp.(-post_alphas[i] * t2[j]) + post_betas[i]));
 		end;
