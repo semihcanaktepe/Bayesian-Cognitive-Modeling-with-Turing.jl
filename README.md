@@ -1,5 +1,5 @@
 # Bayesian Cognitive Modeling with Julia and Turing
-This repository includes the [Julia](https://julialang.org) and [Turing](https://turing.ml) implementation of the codes in Bayesian Cognitive Modeling (Lee &amp; Wagenmakers, 2013).
+This repository includes the [Julia](https://julialang.org) and [Turing](https://turing.ml) implementation of the codes in [Bayesian Cognitive Modeling](https://bayesmodels.com) (Lee &amp; Wagenmakers, 2013).
 
 ## Notes:
 * Codes and implementations are not complete yet.
